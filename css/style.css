@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    background-position: center;
+    color: #fafafa;
+    font-family: 'Ranchers', sans-serif;
+}
+
+#snake {
+    border: 2px solid #314e6b;
+    border-radius: 15px;
+}
+
+.game-over {
+    width: 608px;
+    height: 250px;
+    background-color: rgba(49, 78, 107, 0.8);
+    position: absolute;
+    text-align: center;
+    display: none;
+}
+
+.game-over h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.game-over p {
+    font-size: 1.5rem;
+}
+
+#score {
+    margin-left: .2rem;
+}
+
+.restart-button {
+    padding: .5rem 3rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-family: 'Ranchers', sans-serif;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+.restart-button:hover {
+    background-color: #39638d;
+    transform: scale(1.1);
+}
